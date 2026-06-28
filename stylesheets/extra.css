@@ -1,0 +1,11 @@
+[data-md-color-scheme="default"] {
+  /* 页面主背景 — 暖米色，护眼阅读 */
+  --md-default-bg-color:               hsla(40, 30%, 91%, 1);
+
+  /* 如果你还想调整其他颜色，在这里加：
+  --md-primary-fg-color:             ...;
+  --md-accent-fg-color:              ...;
+  --md-default-fg-color:             ...;
+  --md-code-bg-color:                ...;
+  */
+}
