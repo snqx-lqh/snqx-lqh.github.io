@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://snqx-lqh.github.io/sitemap.xml
+
