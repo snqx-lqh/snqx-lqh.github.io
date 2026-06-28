@@ -7,31 +7,31 @@
       
       
       
-        <link rel="canonical" href="https://github.com/snqx-lqh/snqx-lqh.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F/">
+        <link rel="canonical" href="https://github.com/snqx-lqh/snqx-lqh.github.io/software/vscode/vscode-java/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="1/1/">
+        <link rel="next" href="../vscode-c-cpp/">
       
       
         
       
       
-      <link rel="icon" href="../assets/notebook.png">
+      <link rel="icon" href="../../../assets/notebook.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Index - 小离のBlog</title>
+        <title>VScode配置Java环境 - 小离のBlog</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,15 +50,15 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -84,6 +84,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#jdk" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="小离のBlog" class="md-header__button md-logo" aria-label="小离のBlog" data-md-component="logo">
+    <a href="../../.." title="小离のBlog" class="md-header__button md-logo" aria-label="小离のBlog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -116,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              VScode配置Java环境
             
           </span>
         </div>
@@ -202,16 +207,38 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
     
   
-  主页
+  首页
 
       </a>
     </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mcu/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MCU
+
+        </a>
+      </li>
+    
   
 
       
@@ -225,13 +252,13 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
   
     
   
-  嵌入式
+  软件使用
 
         </a>
       </li>
@@ -267,7 +294,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="小离のBlog" class="md-nav__button md-logo" aria-label="小离のBlog" data-md-component="logo">
+    <a href="../../.." title="小离のBlog" class="md-nav__button md-logo" aria-label="小离のBlog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"></path></svg>
@@ -297,14 +324,14 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    主页
+    首页
   
 
     
@@ -313,6 +340,67 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../mcu/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCU
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -330,8 +418,6 @@
       
         
           
-        
-      
         
       
         
@@ -352,18 +438,18 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    嵌入式
+    软件使用
   
 
     
@@ -374,18 +460,18 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    嵌入式
+    软件使用
   
 
           </label>
@@ -397,10 +483,18 @@
                 
   
   
+    
+  
   
   
     
     
+      
+        
+          
+        
+      
+        
       
         
       
@@ -412,24 +506,23 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="1/1/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-    1
+    vscode
   
 
     
@@ -437,12 +530,126 @@
   
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    vscode
   
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VScode配置Java环境
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VScode配置Java环境
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、JDK的安装与环境配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、VScode的相关配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、建立一个有包的操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -455,37 +662,15 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../vscode-c-cpp/" class="md-nav__link">
         
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="2/2/" class="md-nav__link">
-      
   
   
   <span class="md-ellipsis">
     
   
-    2
+    VSCode配置C和C++环境
   
 
     
@@ -493,12 +678,14 @@
   
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+      </a>
+    </li>
   
 
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -530,6 +717,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、JDK的安装与环境配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、VScode的相关配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、建立一个有包的操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -553,10 +781,10 @@
   
   
     <li class="md-path__item">
-      <a href=".." class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    主页
+    首页
   </span>
 
       </a>
@@ -571,10 +799,28 @@
     
     
       <li class="md-path__item">
-        <a href="./" class="md-path__link">
+        <a href="../../" class="md-path__link">
           
   <span class="md-ellipsis">
-    嵌入式
+    软件使用
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    vscode
   </span>
 
         </a>
@@ -593,71 +839,61 @@
 
 
 
-  <h1>Index</h1>
+  <h1>VScode配置Java环境</h1>
 
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
-<p>测试</p>
+<h2 id="jdk">一、JDK的安装与环境配置<a class="headerlink" href="#jdk" title="Permanent link">¶</a></h2>
+<p>1、在<a href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows">java的官网下载页面</a>找到安装包进行安装。找到对应的操作系统，第一个是直接下载压缩包，第二个是下载一个下载器再安装，我是直接下的第一个。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/1-171076613553611.png" data-desc-position="bottom"><img alt="image-20220115215522395.png" src="../image/1-171076613553611.png"></a></p>
+<p>2、修改环境变量，先建立一个JAVA_HOME变量，将JDK的安装下载位置设为值。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/2-171076613773713.png" data-desc-position="bottom"><img alt="image-20220115220111183.png" src="../image/2-171076613773713.png"></a></p>
+<p>3、点击系统变量中的Path,然后点击编辑，然后把bin的路径填上。按道理来说其实填路径这一步，直接把bin的路径加到Path中也可以，但是网上好多教的都是做一个JAVA_HOME变量，我也不知道为啥。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/3-171076614023215.png" data-desc-position="bottom"><img alt="image-20220115220433663.png" src="../image/3-171076614023215.png"></a></p>
+<p>记得退出环境变量的要进行确定，不要直接叉掉。</p>
+<p>4、打开CMD弹框，运行以下代码</p>
+<div class="language-c highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">java</span><span class="w"> </span><span class="o">-</span><span class="n">version</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>若能出现以下，一般就是安装好了，版本可能会不一样。是自己版本就行。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/4-171076614409617.png" data-desc-position="bottom"><img alt="image-20220115221759015.png" src="../image/4-171076614409617.png"></a></p>
+<h2 id="vscode">二、VScode的相关配置<a class="headerlink" href="#vscode" title="Permanent link">¶</a></h2>
+<p>1、插件下载，找到以下两个插件进行安装，第一个会将有关Java的插件装完，第二个是代码运行插件</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/5-171076614726419.png" data-desc-position="bottom"><img alt="image-20220115223505674.png" src="../image/5-171076614726419.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/6-171076614938921.png" data-desc-position="bottom"><img alt="image-20220115223644365.png" src="../image/6-171076614938921.png"></a></p>
+<p>2、点击命令面板，也可以ctrl+shift+p</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/7-171076615218823.png" data-desc-position="bottom"><img alt="image-20220115223820637.png" src="../image/7-171076615218823.png"></a></p>
+<p>3、输入java，然后找到新建工程</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/8-171076615449125.png" data-desc-position="bottom"><img alt="image-20220115223931737.png" src="../image/8-171076615449125.png"></a></p>
+<p>4、选择想要的工程类型，我这里选择No build tools</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/9.png" data-desc-position="bottom"><img alt="image-20220115224028837.png" src="../image/9.png"></a></p>
+<p>5、找一个想放置工程的文件夹</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/10.png" data-desc-position="bottom"><img alt="image-20220115224156727.png" src="../image/10.png"></a></p>
+<p>6、输入工程名</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/11.png" data-desc-position="bottom"><img alt="image-20220115224310280.png" src="../image/11.png"></a></p>
+<p>7、点开src中的App.java，然后右键Run Code，便可以执行。在输出就可以看到HelloWorld了。到这里，因该就基本可以了。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/12.png" data-desc-position="bottom"><img alt="image-20220115224447422.png" src="../image/12.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/13.png" data-desc-position="bottom"><img alt="image-20220115224640539.png" src="../image/13.png"></a></p>
+<p>8、bin文件放置的是你使用里面工程自带的运行，class文件的保存位置，可以使用这个</p>
+<p>​     lib文件就是拿来放置一些外面的包的位置</p>
+<p>​     src就是你写的东西。</p>
+<h2 id="_1">三、建立一个有包的操作<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>1、在src中新建一个文件夹，然后建立一个add.java文件，建立一个add类。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/14.png" data-desc-position="bottom"><img alt="image-20220115225313156.png" src="../image/14.png"></a></p>
+<p>2、在App.java中进行调用</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/15.png" data-desc-position="bottom"><img alt="image-20220115225425634.png" src="../image/15.png"></a></p>
+<p>3、Run Code</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/16.png" data-desc-position="bottom"><img alt="image-20220115225449661.png" src="../image/16.png"></a></p>
+<p>4、在左边应该还能找到一个JAVA PROJECTS的资源管理器，里面也有各个文件的分类。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/17.png" data-desc-position="bottom"><img alt="image-20220115225707295.png" src="../image/17.png"></a></p>
+<p>5、点击里面的运行。class文件的保存位置就会在bin目录下，src目录下就不会有，但是我这里已经用code run生成了。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/18.png" data-desc-position="bottom"><img alt="image-20220115230716623.png" src="../image/18.png"></a></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -738,10 +974,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share", "announce.dismiss", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share", "announce.dismiss", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   

@@ -8,4 +8,66 @@
   --md-default-fg-color:             ...;
   --md-code-bg-color:                ...;
   */
+ 
+  /* --md-code-fg-color:                  hsla(200, 18%, 26%, 1);
+  --md-code-bg-color:                  hsla(200, 0%, 96%, 1);
+  --md-code-bg-color--light:           hsla(200, 0%, 96%, 0.7);
+  --md-code-bg-color--lighter:         hsla(200, 0%, 96%, 0.3);
+
+ 
+  --md-code-hl-color:                  hsla(#{hex2hsl($clr-blue-a200)}, 1);
+  --md-code-hl-color--light:           hsla(#{hex2hsl($clr-blue-a200)}, 0.1);
+
+ 
+  --md-code-hl-number-color:           hsla(0, 67%, 50%, 1);
+  --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+  --md-code-hl-constant-color:         hsla(250, 63%, 60%, 1);
+  --md-code-hl-keyword-color:          hsla(219, 54%, 51%, 1);
+  --md-code-hl-string-color:           hsla(150, 63%, 30%, 1);
+  --md-code-hl-name-color:             var(--md-code-fg-color);
+  --md-code-hl-operator-color:         var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:          var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:          var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:         var(--md-default-fg-color--light); */
+
+  /* --md-code-hl-keyword-color:          hsla(207, 60%, 59%, 1);    
+  --md-code-hl-string-color:           hsla(19, 47%, 64%, 1);    
+  --md-code-hl-number-color:           hsla(102, 28%, 73%, 1);    
+  --md-code-hl-function-color:         hsla(60, 42%, 76%, 1);    
+  --md-code-hl-constant-color:         hsla(207, 60%, 59%, 1);    
+  --md-code-hl-special-color:          hsla(340, 55%, 60%, 1);    
+  --md-code-hl-variable-color:         hsla(197, 98%, 80%, 1);    
+  --md-code-hl-operator-color:         hsla(0, 0%, 83%, 1);       
+  --md-code-hl-punctuation-color:      hsla(0, 0%, 83%, 1);      
+  --md-code-hl-comment-color:          hsla(105, 29%, 47%, 1);      
+  --md-code-hl-name-color:             hsla(0, 0%, 91%, 1);       
+  --md-code-hl-generic-color:          hsla(0, 0%, 83%, 1);       
+
+  --md-code-bg-color:                  hsla(210, 12%, 16%, 1);    
+  --md-code-fg-color:                  hsla(0, 0%, 91%, 1);       
+  --md-code-bg-color--light:           hsla(210, 12%, 20%, 0.7); 
+  --md-code-bg-color--lighter:         hsla(210, 12%, 22%, 0.3); */
+
+  --md-code-hl-keyword-color:          hsla(240, 100%, 50%, 1);   /* #0000FF — 关键字，纯蓝 */
+  --md-code-hl-string-color:           hsla(0, 77%, 36%, 1);      /* #A31515 — 字符串，深红 */
+  --md-code-hl-number-color:           hsla(162, 87%, 22%, 1);    /* #098658 — 数字，深绿 */
+  --md-code-hl-function-color:         hsla(39, 53%, 29%, 1);     /* #795E26 — 函数名，棕黄 */
+  --md-code-hl-constant-color:         hsla(240, 100%, 50%, 1);   /* 与 keyword 一致 */
+  --md-code-hl-special-color:          hsla(330, 80%, 40%, 1);    /* 转义/特殊，玫红 */
+  --md-code-hl-variable-color:         hsla(240, 100%, 25%, 1);   /* #001080 — 变量，深蓝 */
+  --md-code-hl-operator-color:         hsla(0, 0%, 0%, 1);        /* #000000 — 运算符，纯黑 */
+  --md-code-hl-punctuation-color:      hsla(0, 0%, 0%, 1);        /* #000000 — 标点，纯黑 */
+  --md-code-hl-comment-color:          hsla(120, 100%, 25%, 1);   /* #008000 — 注释，经典绿 */
+  --md-code-hl-name-color:             hsla(0, 0%, 0%, 0.87);     /* 普通标识符，近黑 */
+  --md-code-hl-generic-color:          hsla(0, 0%, 0%, 0.65);     /* 泛型/类型参数 */
+  --md-code-hl-type-color:             hsla(189, 60%, 35%, 1);    /* #267F99 — 类型名，青蓝 */
+
+  --md-code-bg-color:                  rgb(238, 238, 238);       /* #FAFAFA — 代码块背景，微灰 */
+  --md-code-fg-color:                  hsla(0, 0%, 0%, 0.85);     /* 代码前景 */
+  --md-code-bg-color--light:           hsla(0, 0%, 96%, 0.7);
+  --md-code-bg-color--lighter:         hsla(0, 0%, 96%, 0.3);
+
+
 }

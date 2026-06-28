@@ -15,30 +15,30 @@
 const PINNED_ARTICLES = [
   {
     id: 1,
-    category: 'freeRTOS',
-    categoryLabel: 'FreeRTOS',
-    title: '从零开始编写 FreeRTOS 任务调度器',
-    description: '深入理解 FreeRTOS 内核，手把手实现任务创建、切换与调度，剖析源码级实现细节。',
-    tags: ['FreeRTOS', 'STM32', 'C'],
-    url: '/嵌入式/1/1/'
+    category: '软件使用',
+    categoryLabel: 'VScode',
+    title: 'VScode配置Java环境',
+    description: '使用VS配置Java环境，配置JDK等内容',
+    tags: ['VScode', 'Java'],
+    url: 'software/vscode/vscode-java'
   },
   {
     id: 2,
-    category: 'esp32',
-    categoryLabel: 'ESP32',
-    title: 'ESP32 BLE 蓝牙实战：从配对到数据传输',
-    description: '详解 ESP32 BLE 协议栈架构，实现手机与设备的双向数据通信，含完整示例工程。',
-    tags: ['ESP32', 'BLE', 'IoT'],
-    url: '/嵌入式/2/2/'
+    category: '软件使用',
+    categoryLabel: 'VScode',
+    title: 'VSCode配置C和C++环境',
+    description: 'VSCode配置C和C++环境，配置编译器、调试器等内容',
+    tags: ['VScode', 'C', 'C++'],
+    url: 'software/vscode/vscode-c-cpp'
   },
   {
     id: 3,
-    category: 'linux',
-    categoryLabel: 'Linux',
-    title: 'Linux 设备树（Device Tree）完全解读',
-    description: '从 U-Boot 到内核启动，拆解设备树工作原理，基于 IMX6ULL 平台实战验证。',
-    tags: ['Linux', 'IMX6ULL', '设备树'],
-    url: '/嵌入式/1/1/'
+    category: 'MCU',
+    categoryLabel: 'ESP01S',
+    title: 'STM32 使用 AT 指令驱动 ESP01S 进行 MQTT 通信',
+    description: 'STM32 使用 AT 指令驱动 ESP01S 进行 MQTT 通信，适用于物联网应用',
+    tags: ['STM32', 'ESP01S', 'MQTT'],
+    url: 'mcu/esp01S/04_stm32_at_mqtt'
   }
 ];
 
@@ -46,57 +46,39 @@ const PINNED_ARTICLES = [
 const OPEN_SOURCE_PROJECTS = [
   {
     id: 'mcuboot',
-    name: 'MCUBoot',
-    description: '通用嵌入式 Bootloader，支持 STM32 / ESP32 OTA 升级与安全回滚',
-    tags: ['C', 'STM32', 'ESP32'],
-    stars: 128,
+    name: 'Stm32BalanceCar',
+    description: '基于STM32C8T6的平衡车代码设计，使用CubeMX和FreeRTOS的一个项目',
+    tags: ['C', 'STM32', 'ESP01S'],
+    stars: 38,
     iconId: 'monitor',
-    url: 'https://github.com'
+    url: 'https://github.com/snqx-lqh/Stm32BalanceCar'
   },
   {
     id: 'embedcli',
-    name: 'EmbedCLI',
-    description: '嵌入式命令行框架，提供串口交互、日志系统与脚本执行能力',
-    tags: ['C', 'FreeRTOS'],
-    stars: 96,
+    name: 'ProteusAnd89C51',
+    description: '使用Proteus8.9仿真51单片机的一些实例，包含数码管、LCD1602、步进电机、矩阵键盘、DS1302、超声波测距、DS18B20、蜂鸣器、EEPROM等',
+    tags: ['51', 'Proteus'],
+    stars: 11,
     iconId: 'code',
-    url: 'https://github.com'
+    url: 'https://github.com/snqx-lqh/ProteusAnd89C51'
   },
   {
     id: 'iothub',
-    name: 'IoTHub',
-    description: 'ESP32 物联网网关，集成 MQTT、BLE Mesh 与 WiFi Manager',
-    tags: ['C++', 'ESP32', 'MQTT'],
-    stars: 203,
+    name: 'RaspberryPiSmartHome',
+    description: '树莓派智能家居项目，学习树莓派的wiringpi用C语言开发，并且组合成一个智能家居项目，使用的是树莓派3B+',
+    tags: ['C++', 'RaspberryPi', 'MQTT'],
+    stars: 10,
     iconId: 'wifi',
-    url: 'https://github.com'
+    url: 'https://github.com/snqx-lqh/RaspberryPiSmartHome'
   },
   {
     id: 'qthmi',
-    name: 'QtHMI',
-    description: '跨平台嵌入式 HMI 框架，封装工业控件与 Modbus/串口通信',
-    tags: ['C++', 'Qt', 'QML'],
-    stars: 167,
+    name: 'Stm32RemoteControl',
+    description: '基于STM32F103cbt6的遥控器，使用FreeRTOS实时操作系统，通信使用NRF24L01',
+    tags: ['C', 'FreeRTOS', 'NRF24L01'],
+    stars: 6,
     iconId: 'monitor',
-    url: 'https://github.com'
-  },
-  {
-    id: 'rtoskit',
-    name: 'RTOS-Kit',
-    description: 'FreeRTOS 中间件集合，含任务管理、消息队列与软件定时器封装',
-    tags: ['C', 'FreeRTOS'],
-    stars: 85,
-    iconId: 'settings',
-    url: 'https://github.com'
-  },
-  {
-    id: 'linuxdrv',
-    name: 'LinuxDrv',
-    description: 'IMX6ULL 驱动开发示例库，覆盖 GPIO、I2C、SPI、UART 与帧缓冲',
-    tags: ['C', 'Linux', 'IMX6ULL'],
-    stars: 142,
-    iconId: 'terminal',
-    url: 'https://github.com'
+    url: 'https://github.com/snqx-lqh/Stm32RemoteControl'
   }
 ];
 
@@ -106,33 +88,25 @@ const FEATURED_COLUMNS = [
     id: 'stm32',
     name: 'STM32 专栏',
     description: '从入门到进阶，系统掌握 STM32 开发',
-    count: 45,
+    count: 6,
     iconId: 'chip',
-    url: '/嵌入式/1/1/'
+    url: 'mcu/stm32'
   },
   {
     id: 'esp32',
-    name: 'ESP32 专栏',
+    name: 'ESP01S 专栏',
     description: '物联网实战，WiFi 与蓝牙应用',
-    count: 38,
+    count: 5,
     iconId: 'wifi',
-    url: '/嵌入式/2/2/'
+    url: 'mcu/esp01S'
   },
   {
-    id: 'linux',
-    name: 'Linux 专栏',
-    description: '驱动开发与系统移植深度解析',
-    count: 52,
+    id: 'cpp',
+    name: 'VSCode 专栏',
+    description: 'VSCode 配置与使用技巧',
+    count: 2,
     iconId: 'terminal',
-    url: '/嵌入式/1/1/'
-  },
-  {
-    id: 'qt',
-    name: 'Qt 专栏',
-    description: '跨平台嵌入式 HMI 界面开发',
-    count: 27,
-    iconId: 'window',
-    url: '/嵌入式/1/1/'
+    url: 'software/vscode'
   }
 ];
 

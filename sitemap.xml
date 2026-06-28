@@ -5,15 +5,75 @@
          <lastmod>2026-06-28</lastmod>
     </url>
     <url>
-         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/</loc>
          <lastmod>2026-06-28</lastmod>
     </url>
     <url>
-         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F/1/1/</loc>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/esp01s/</loc>
          <lastmod>2026-06-28</lastmod>
     </url>
     <url>
-         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/%E5%B5%8C%E5%85%A5%E5%BC%8F/2/2/</loc>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/esp01s/01_software_download/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/esp01s/02_pc_at_control/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/esp01s/03_stm32_at_tcp/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/esp01s/04_stm32_at_mqtt/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/esp01s/05_stm32_at_mqtt_json/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/01_gpio/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/02_systick/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/03_exti/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/04_timer_exti/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/05_serial/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/mcu/stm32/06_adc/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/software/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/software/vscode/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/software/vscode/vscode-c-cpp/</loc>
+         <lastmod>2026-06-28</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/snqx-lqh/snqx-lqh.github.io/software/vscode/vscode-java/</loc>
          <lastmod>2026-06-28</lastmod>
     </url>
 </urlset>
