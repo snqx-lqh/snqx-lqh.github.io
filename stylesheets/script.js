@@ -38,7 +38,7 @@ const PINNED_ARTICLES = [
     title: 'STM32 使用 AT 指令驱动 ESP01S 进行 MQTT 通信',
     description: 'STM32 使用 AT 指令驱动 ESP01S 进行 MQTT 通信，适用于物联网应用',
     tags: ['STM32', 'ESP01S', 'MQTT'],
-    url: 'mcu/esp01S/04_stm32_at_mqtt'
+    url: 'mcu/esp01s/04_stm32_at_mqtt'
   }
 ];
 
