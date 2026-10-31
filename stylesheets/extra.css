@@ -71,3 +71,27 @@
 
 
 }
+
+/* ============================================================
+   页脚访问统计（本站总访问量 / 今日访问量）
+   数据由 cdn.busuanzi.cc 脚本填充（见 mkdocs.yml extra_javascript）
+   ============================================================ */
+.md-copyright__visit {
+  margin-top: 0.1rem;
+  line-height: 1.6;
+}
+
+.md-copyright__visit > span {
+  white-space: nowrap;
+}
+
+.md-copyright__visit span[id^="busuanzi_"] {
+  color: var(--md-footer-fg-color);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.md-copyright__visit-sep {
+  margin: 0 0.35rem;
+  opacity: 0.6;
+}
