@@ -50,24 +50,28 @@
   --md-code-bg-color--light:           hsla(210, 12%, 20%, 0.7); 
   --md-code-bg-color--lighter:         hsla(210, 12%, 22%, 0.3); */
 
-  --md-code-hl-keyword-color:          hsla(240, 100%, 50%, 1);   /* #0000FF — 关键字，纯蓝 */
-  --md-code-hl-string-color:           hsla(0, 77%, 36%, 1);      /* #A31515 — 字符串，深红 */
-  --md-code-hl-number-color:           hsla(162, 87%, 22%, 1);    /* #098658 — 数字，深绿 */
-  --md-code-hl-function-color:         hsla(39, 53%, 29%, 1);     /* #795E26 — 函数名，棕黄 */
-  --md-code-hl-constant-color:         hsla(240, 100%, 50%, 1);   /* 与 keyword 一致 */
-  --md-code-hl-special-color:          hsla(330, 80%, 40%, 1);    /* 转义/特殊，玫红 */
-  --md-code-hl-variable-color:         hsla(240, 100%, 25%, 1);   /* #001080 — 变量，深蓝 */
-  --md-code-hl-operator-color:         hsla(0, 0%, 0%, 1);        /* #000000 — 运算符，纯黑 */
-  --md-code-hl-punctuation-color:      hsla(0, 0%, 0%, 1);        /* #000000 — 标点，纯黑 */
-  --md-code-hl-comment-color:          hsla(120, 100%, 25%, 1);   /* #008000 — 注释，经典绿 */
-  --md-code-hl-name-color:             hsla(0, 0%, 0%, 0.87);     /* 普通标识符，近黑 */
-  --md-code-hl-generic-color:          hsla(0, 0%, 0%, 0.65);     /* 泛型/类型参数 */
-  --md-code-hl-type-color:             hsla(189, 60%, 35%, 1);    /* #267F99 — 类型名，青蓝 */
+  /* One Light 风格：低饱和配色，注释用灰色弱化，和暖色背景更协调 */
+  --md-code-hl-keyword-color:          #a626a4;   /* 紫 — 关键字 */
+  --md-code-hl-string-color:           #3f8f3f;   /* 绿 — 字符串 */
+  --md-code-hl-number-color:           #8a6100;   /* 橙棕 — 数字 */
+  --md-code-hl-function-color:         #2f6bd8;   /* 蓝 — 函数名 */
+  --md-code-hl-constant-color:         #8a6100;   /* 橙棕 — 常量 */
+  --md-code-hl-special-color:          #d1483c;   /* 红 — 特殊字符 */
+  --md-code-hl-variable-color:         #d1483c;   /* 红 — 变量 */
+  --md-code-hl-operator-color:         #3c3f46;   /* 深灰 — 运算符 */
+  --md-code-hl-punctuation-color:      #3c3f46;   /* 深灰 — 标点 */
+  --md-code-hl-comment-color:          #737680;   /* 灰 — 注释 */
+  --md-code-hl-name-color:             #3c3f46;   /* 深灰 — 标识符 */
+  --md-code-hl-generic-color:          #5e626a;   /* 中灰 — 泛型 */
+  --md-code-hl-type-color:             #9a6900;   /* 金黄 — 类型 */
 
-  --md-code-bg-color:                  rgb(238, 238, 238);       /* #FAFAFA — 代码块背景，微灰 */
-  --md-code-fg-color:                  hsla(0, 0%, 0%, 0.85);     /* 代码前景 */
-  --md-code-bg-color--light:           hsla(0, 0%, 96%, 0.7);
-  --md-code-bg-color--lighter:         hsla(0, 0%, 96%, 0.3);
+  --md-code-bg-color:                  hsla(40, 22%, 85%, 1);     /* 暖灰 — 与米色页面背景拉开层次 */
+  --md-code-fg-color:                  hsla(0, 0%, 0%, 0.87);     /* 代码前景 */
+  --md-code-bg-color--light:           hsla(40, 22%, 88%, 0.85);
+  --md-code-bg-color--lighter:         hsla(40, 22%, 90%, 0.35);
+
+  /* 自定义：内容区分隔线 / 边框颜色 */
+  --blog-border-color:                 hsla(40, 20%, 42%, 0.22);
 
 
 }
@@ -94,4 +98,147 @@
 .md-copyright__visit-sep {
   margin: 0 0.35rem;
   opacity: 0.6;
+}
+
+/* ============================================================
+   正文排版增强：引用块 / 代码块 / 标题分隔
+   ============================================================ */
+
+/* ---------- 引用块：左侧强调条 + 浅色底 ---------- */
+.md-typeset blockquote {
+  margin: 1.2em 0;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-default-fg-color);
+}
+
+/* 用 [dir=ltr] 提高优先级，覆盖 Material 默认的灰色左边框 */
+[dir="ltr"] .md-typeset blockquote {
+  border-left: 0.2rem solid var(--md-accent-fg-color);
+  padding-left: 0.9rem;
+}
+
+.md-typeset blockquote > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- 代码块：加深底色 + 细边框 ---------- */
+.md-typeset pre > code {
+  border: 0.05rem solid var(--blog-border-color);
+  border-radius: 0.2rem;
+}
+
+/* 带行号的代码块：行号列和代码区拼成一个整体 */
+.md-typeset .highlighttable td.linenos {
+  border: 0.05rem solid var(--blog-border-color);
+  border-right: 0;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.md-typeset .highlighttable td.code > div > pre > code {
+  border-left: 0;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+/* 行内代码也加一点边框，避免和正文混在一起 */
+.md-typeset :not(pre) > code {
+  border: 0.05rem solid var(--blog-border-color);
+  border-radius: 0.15rem;
+}
+
+/* 注释用斜体，和代码正文区分得更明显 */
+.md-typeset .highlight .c,
+.md-typeset .highlight .c1,
+.md-typeset .highlight .cm,
+.md-typeset .highlight .cs,
+.md-typeset .highlight .ch {
+  font-style: italic;
+}
+
+/* ---------- 图片：正文段落里的图片自动居中 ---------- */
+.md-content__inner.md-typeset p > img,
+.md-content__inner.md-typeset p > a > img {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* ---------- 表格：论文三线表 ---------- */
+.md-typeset table:not([class]) {
+  display: table;
+  width: auto;
+  max-width: 100%;
+  margin: 1.2rem auto;
+  border: none;
+  border-top: 0.1rem solid var(--md-default-fg-color);
+  border-bottom: 0.1rem solid var(--md-default-fg-color);
+  border-radius: 0;
+  background: transparent;
+  font-size: 0.68rem;
+  table-layout: auto;
+}
+
+.md-typeset table:not([class]) th {
+  min-width: 0;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-bottom: 0.05rem solid var(--md-default-fg-color);
+  background: transparent;
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.55rem 1rem;
+  border: none;
+  background: transparent;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* 窄屏：保留横向滚动，避免宽表格撑破页面 */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset table:not([class]) {
+    display: inline-block;
+    overflow-x: auto;
+    margin: 1.2rem 0;
+  }
+}
+
+/* ---------- 标题：加强层级与分隔 ---------- */
+.md-content__inner.md-typeset > h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.1rem solid var(--blog-border-color);
+  margin-bottom: 1.2rem;
+}
+
+.md-content__inner.md-typeset > h2 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.05rem solid var(--blog-border-color);
+  margin-top: 2.2em;
+}
+
+.md-content__inner.md-typeset > h3 {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+  padding-left: 0.5rem;
+  border-left: 0.2rem solid var(--md-accent-fg-color);
+  line-height: 1.4;
+}
+
+.md-content__inner.md-typeset > h4 {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
 }
