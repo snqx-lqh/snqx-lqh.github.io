@@ -1,5 +1,5 @@
 /**
- * 页脚访问统计：本站总访问量 / 今日访问量
+ * 页脚访问统计：本站总访客数 / 今日访客数（UV）
  *
  * 数据来源：https://cdn.busuanzi.cc
  * 说明：
@@ -35,8 +35,8 @@
       return response.json();
     })
     .then(function (data) {
-      render('busuanzi_site_pv', data.busuanzi_site_pv);
-      render('busuanzi_today_pv', data.busuanzi_today_pv);
+      render('busuanzi_site_uv', data.busuanzi_site_uv);
+      render('busuanzi_today_uv', data.busuanzi_today_uv);
     })
     .catch(function () {
       /* 统计失败时保持占位符，不打扰读者 */
