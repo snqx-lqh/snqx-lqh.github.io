@@ -213,6 +213,50 @@
   }
 }
 
+/* ---------- 404 页面 ---------- */
+.md-404 {
+  max-width: 32rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.md-typeset .md-404__code {
+  margin: 0;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.md-typeset .md-404__title {
+  margin: 0.8rem 0 0.6rem;
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+}
+
+.md-typeset .md-404__text {
+  margin: 0.35rem 0;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .md-404__qr {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  margin: 1.4rem auto;
+  border: 0.05rem solid var(--blog-border-color);
+  border-radius: 0.25rem;
+}
+
+.md-typeset .md-404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
 /* ---------- 标题：加强层级与分隔 ---------- */
 .md-content__inner.md-typeset > h1 {
   color: var(--md-default-fg-color);
